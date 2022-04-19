@@ -1,0 +1,175 @@
+/* css that will cover all pages, mostly for navBar and Footer */
+/* body just changes background color and font family */
+body {
+  background-color: beige;
+  font-family: Gill Sans, sans-serif;
+}
+/* This code Removes the bullets on the listed items(ahrefs).Adds margin around the nav bar and sets its color. I needed overflow to show the navBar background color to dark blue. I do not know how it works but it does. the position fixed is for the navbar to stay on top and visible even if users scroll down. */
+.navBar {
+  list-style-type: none;
+  background-color: white;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+/*   z-index: 10; */
+}
+
+/* moved the links to the left and be inline with float. Padding separates the links from each other and making it look nice. font size is how large the text. */
+.navLinks {
+  float: left;
+  padding: 14px 16px;
+  font-size: 30px;
+}
+
+/* the color of the links from the first time the page is visited. Text decoration takes off the underline in links. */
+a:link {
+  color: darkblue;
+  text-decoration: none;
+}
+
+/* after clicking on the link, they usually change color. Since I didnt want that, I made the color the same as before. */
+a:visited {
+  color: darkblue;
+}
+/* this sh
+ows a different color once the user moves their mouse on the link. */
+a:hover {
+  color: yellow;
+}
+
+/* Clicking on the link makes the link active and the color will change for as long as it is clicked on. */
+a:active {
+  color: pink;
+}
+
+/* HERO css */
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://blog-www.pods.com/wp-content/uploads/2021/08/resized_FI_Getty_Charlotte-NC-skyline-autumn-fall.jpg");
+  margin-top: 48px;
+  background-repeat: no-repeat;
+  background-size: 100% 52%;
+  position: relative;
+  padding-top:100%
+}
+.heroText{
+  text-align: center;
+  position: absolute;
+  bottom: 80%;
+  left: 40%;
+  color: white;
+  font-size: 80px;
+  
+}
+/*index.html css*/
+.welcomep {
+  position:relative;
+  bottom:700px;
+  color: white;
+  font-size: 50px;
+  background-color: darkblue;
+  border-radius: 12%;
+  padding: 05%;
+  width: 70%;
+  margin-left: 15%;
+  margin-bottom:20px;
+  /* z-index: 0; */
+}
+
+/*todo.html css*/
+  #todo {
+  color: white;
+  background-color: darkblue;
+  border-radius: 12%;
+  padding: 5%;
+  width: 80%;
+  margin: 5%;
+}
+/* Changing titles size and separating them from the paragraphs, Clearfix to stop elements from flowing around a floating element */
+.placesTitles {
+  clear:fix;
+  font-size:50px;
+  margin-bottom: 5%;
+}
+/* mostly effects the paragraphs font to make reading better. */
+.clearfix {
+  overflow: hidden;
+  font-size: 30px;
+  word-spacing: 5px;
+  line-height: 50px;
+  margin-bottom:80px;
+}
+/* images are set to float to the right and fix there height and width. Margin is used to give an invisable separation between image and words */
+.images {
+  float: right;
+  height:480px;
+  width:510px;
+  margin-left:2px;
+}
+
+/*contact.html css*/
+#contactTitle {
+  color: darkblue;
+  margin-top: 100px;
+  text-align: center;
+  font-size: 50px;
+  padding:1%;
+  font-weight: bold;
+}
+
+/* Setting the styling for the form */
+#contact-form{
+  color: white;
+  text-align: center;
+  height:30%;
+  width: 50%;
+  background-color: darkblue;
+  border-radius: 12px;
+  border-width: 1px;
+  margin: 2% auto;
+  padding:2%;
+  border: 50px;
+}
+/* no bullets besides words on form */
+formSize {
+  list-style-type: none;
+}
+/* sets the list items next to the text field box */
+label {
+  display: block;
+}
+input {
+  height: 40px;
+  width: 50%;
+}
+/* increases the size of the fonts */
+li {
+  font-size: 40px;
+  line-height:43px;
+}
+/* user cant increase or decrease the size of the box for questions or comments. */
+#message {
+  resize: none;
+  height: 40px;
+  width: 50%;
+}
+/* change button size */
+#button {
+  margin-top:15px;
+  height: 40px;
+  width: 20%;
+}
+
+/*footer css */
+    .footer {
+      font-size: 40px;
+      width:100%;
+      background-color: darkblue;
+      text-align: center;
+      color: white;
+      position:absolute;
+    }
+    .flogo {
+      height:10%;
+      width: 10%;
+    }
