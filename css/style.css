@@ -87,7 +87,7 @@ a:active {
 }
 /* Changing titles size and separating them from the paragraphs, Clearfix to stop elements from flowing around a floating element */
 .placesTitles {
-  clear:fix;
+  clear: fix;
   font-size:50px;
   margin-bottom: 5%;
 }
